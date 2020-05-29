@@ -1,7 +1,7 @@
 class estudiante():
     #atributos
     promedio = 9.8
-    edad_minima = 17
+    instituto = 'Universidad tecnologica de Tulancingo'
     entidad = 'tulancingo' 
     carrera = "TIC's"
     nivel = 'Universidad'
@@ -13,7 +13,7 @@ class estudiante():
     def entrega_actividad(self):
         print('entrega de actividad')
 
-class graduado():
+class graduado(estudiante):
     #atributos
     nombre = 'Yael'
     promedio_final = 10
@@ -27,3 +27,18 @@ class graduado():
         print("Generador de pago")
     def certificado(self):
         print("Certificado")
+yael = graduado()
+yael.consulta()
+yael.entrega_actividad()
+yael.generar_pago()
+yael.certificado()
+print(yael.promedio)
+print(yael.instituto)
+print(yael.entidad)
+print(yael.carrera)
+print(yael.nivel)
+print(yael.nombre)
+print(yael.promedio_final)
+print(yael.edad)
+print(yael.titulo)
+print(yael.matricula)
