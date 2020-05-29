@@ -31,5 +31,18 @@ class hsbc(banco):
     def cierre_cuenta(self):
         print('Cierre de cuenta')
 hsbc = hsbc()
+hsbc.deposito()
 hsbc.retiro()
+hsbc.apertura_cuenta()
+hsbc.cierre_cuenta()
+
 print(hsbc.guardias)
+print(hsbc.cajeros)
+print(hsbc.ventanillas)
+print(hsbc.piso)
+print(hsbc.puertas)
+print(hsbc.nombre_banco)
+print(hsbc.camaras)
+print(hsbc.cajas_fuerte)
+print(hsbc.empleados)
+print(hsbc.clientes)
