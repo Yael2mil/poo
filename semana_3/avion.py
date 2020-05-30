@@ -8,7 +8,7 @@ class avion():
     #metodos
     def __init__(self):
         pass
-    def ascencer(self):
+    def ascender(self):
         print('Ascender')
     def descender(self):
         print('Descender')
@@ -39,7 +39,7 @@ print(aeromexico.pilotos)
 print(aeromexico.alerones)
 print(aeromexico.timon)
 print(aeromexico.pasajeros)
-print(aeromexico.aerolina)
+print(aeromexico.aerolinea)
 print(aeromexico.aeromosas)
 print(aeromexico.capacidad_tanque)
 print(aeromexico.capacidad_peso)
