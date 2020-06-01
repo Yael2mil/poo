@@ -12,7 +12,7 @@ class cajero_automatico():
         print('retiro')
     def leer_tarjeta(self):
         print('leer tarjeta')
-class cajero_avanzado():
+class cajero_avanzado(cajero_automatico):
     #atributos
     color = 'gris'
     botones = 6 
