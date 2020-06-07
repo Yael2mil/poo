@@ -1,4 +1,4 @@
-class Avion():
+class Avion:
     #atributos
     alas = 2
     cabina = 1
@@ -13,7 +13,7 @@ class Avion():
     def descender(self):
         print('Descender')
 
-class comercial(avion):
+class VueloComercial(Avion):
     #atributos
     pasajeros = 300
     aerolinea = 'aeromexico'
@@ -27,3 +27,23 @@ class comercial(avion):
         print('despegue')
     def aterrizaje(self):
         print('aterrizaje')
+    def ascender(self):
+        print("ascendiendo a 6000 pies")
+    def descender(self):
+        print("descendiendo altitud")
+    
+aeromexico = VueloComercial()
+aeromexico.ascender()
+aeromexico.descender()
+aeromexico.despegue()
+aeromexico.aterrizaje()
+print(aeromexico.alas)
+print(aeromexico.cabina)
+print(aeromexico.pilotos)
+print(aeromexico.alerones)
+print(aeromexico.timon)
+print(aeromexico.pasajeros)
+print(aeromexico.aerolinea)
+print(aeromexico.aeromosas)
+print(aeromexico.capacidad_tanque)
+print(aeromexico.capacidad_peso)
