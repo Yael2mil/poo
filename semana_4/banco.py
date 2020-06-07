@@ -1,4 +1,4 @@
-class Banco():
+class Banco:
     # atributos
     guardias = 2
     cajeros = 12
