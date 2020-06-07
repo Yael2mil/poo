@@ -26,9 +26,9 @@ class Hsbc(Banco):
     def __init__(self):
         pass
     # métodos
-    def apertura_Cuenta(self):
+    def aperturaCuenta(self):
         print("Apertura de cuenta")
-    def cierre_Cuenta(self):
+    def cierreCuenta(self):
         print('Cierre de cuenta')
     def deposito(self):
         print('deposito desde practicaja')
@@ -37,8 +37,8 @@ class Hsbc(Banco):
 hsbc = Hsbc()
 hsbc.deposito()
 hsbc.retiro()
-hsbc.apertura_Cuenta()
-hsbc.cierre_Cuenta()
+hsbc.aperturaCuenta()
+hsbc.cierreCuenta()
 
 print(hsbc.guardias)
 print(hsbc.cajeros)
