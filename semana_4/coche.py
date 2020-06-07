@@ -1,4 +1,4 @@
-class coche():
+class Coche:
     #atributos
     llantas = 'pirelli'
     combustible = 'gasolina'
@@ -12,7 +12,8 @@ class coche():
         print('acelerar')
     def frenar(self):
         print('frenar')
-class nissan(coche):
+class Nissan(Coche):
+
     #atributos
     marca = 'nissan'
     linea = 'aveo'
@@ -22,14 +23,18 @@ class nissan(coche):
     #metodos
     def __init__(self):
         pass
-    def abrir_puerta(self):
+    def abrirPuerta(self):
         print('abrir puerta')
     def encender(self):
         print('encender')
-aveo = nissan()
+    def acelerar(self):
+        print("acelerando vehiculo")
+    def frenar(self):
+        print("Frenando vehiculo")
+aveo = Nissan()
 aveo.acelerar()
 aveo.frenar()
-aveo.abrir_puerta()
+aveo.abrirPuerta()
 aveo.encender()
 print(aveo.llantas)
 print(aveo.combustible)
