@@ -2,17 +2,20 @@ class Palindromo: #Definimos la clase
 	def __init__(self): #definimos el constructor
 		pass
 	def comprobador(self, x): #Definimos el metodo que va a analizar si el texto es palindromo
-		replacements = (   #listas para reconocer vocales acentuadas
+		VOCALES = (   #listas para reconocer vocales acentuadas
 			("á", "a"),
 			("é", "e"),
 			("í", "i"),
 			("ó", "o"),
 			("ú", "u"),
+            ("ü", "u"),
 		)
-		for a, b in replacements: #para utilizar las listas utilizamos las comas, que representan cada letra, una acentuada la otra no
+		for a, b in VOCALES: #para utilizar las listas utilizamos las comas, que representan cada letra, una acentuada la otra no
 			x = x.replace(a, b).replace(a.upper(), b.upper()) #reemplaza las vocales con acento
 		x = x.replace(' ','') #Elimina los espacios
-		cadena_inversa = ''.join(reversed(x)) #invierte la cadena
+		cadena_inversa = '' #creamos una variable para guardar la cadena invertida
+		for letra in x: #Lee cada letra
+			cadena_inversa = letra + cadena_inversa #agrega cada letra al principio de la cadena
 		if x == cadena_inversa: #comprueba si es un palindromo
 			print('Es un palindromo') #imprime el resultado
 		else:  #Si la palabra no es palindromo
@@ -26,7 +29,7 @@ class Palindromo: #Definimos la clase
 				no_vocales += 1 #suma una vocal
 			if caracter == ' ': #identifica si es un espacio
 				no_espacios += 1 #suma un espacio
-		print('Hay {} vocales y  {} espacios.'.format(self.no_vocales, self.no_espacios)) #imprime el resultado
+		print('Hay {} vocales y  {} espacios.'.format(no_vocales, no_espacios)) #imprime el resultado
 while True: #Para usar el codigo cuantas veces se quiera
 	texto = input('Ingrese texto a analizar: ') #Entrada de texto
 	hola = Palindromo() #Crea un objeto
