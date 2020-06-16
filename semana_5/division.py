@@ -7,13 +7,26 @@ while division < dividendo:
     cociente += 1
     division = divisor * cociente
 residuo = division - dividendo
-if residuo > 0:
+
+while residuo > 0:
     cociente -= 1
     x = 0
-    while residuo < divisor:
+    terminar1= residuo < divisor
+    y = 1
+    while terminar1:
         x +=1
-        y = (float(residuo) * 0.1)*x
+        y = y * 0.1
         residuo = residuo * 10
-        while cociente*divisor < dividendo:
-            cociente+= y 
+        residuo = residuo - cociente*divisor
+        terminar = True
+        while terminar:
+            cociente+= y
+            if cociente*divisor > dividendo:
+                cociente -=y
+                terminar= False
+        if x == 10:
+            terminar1 = False
+            residuo = 0
+        
+
 print(cociente)
