@@ -1,4 +1,4 @@
-class CodigoCesar:
+'class CodigoCesar:
     def __init__(self):
         self.cadena = input('ingrese el texto a analizar: ')
     def codificar(self):
